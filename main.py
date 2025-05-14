@@ -44,7 +44,7 @@ def generate_video(request: Request, prompt: str = ""):
         steps_offset=1
     )
 
-    pipe.to("cuda")
+    pipe.to("cpu")
     pipe.enable_vae_slicing()
     pipe.enable_model_cpu_offload()
 

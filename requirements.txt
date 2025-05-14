@@ -2,6 +2,7 @@ fastapi
 uvicorn
 diffusers
 torch
+transformers
 jinja2
 nest_asyncio
 accelerate
