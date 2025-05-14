@@ -1,8 +1,1 @@
-fastapi
-uvicorn
-diffusers
-torch
-transformers
-jinja2
-nest_asyncio
-accelerate
+fastapi\nuvicorn\ndiffusers\ntorch\ntransformers\njinja2\nnest_asyncio\naccelerate
