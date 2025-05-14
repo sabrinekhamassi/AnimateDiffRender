@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+diffusers
+torch
+jinja2
+nest_asyncio
+accelerate

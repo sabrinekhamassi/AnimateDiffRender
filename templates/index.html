@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Video Generator</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="generator-box">
+    <form method="get" action="/generate" class="left-panel">
+      <h2>🎬 AI Video Generator</h2>
+      <label>Your prompt:</label>
+      <textarea name="prompt" required>A futuristic robot in glowing city</textarea>
+      <button class="generate-btn" type="submit">🚀 Generate!</button>
+    </form>
+    <div class="right-panel" id="video_output">
+      {% if gif_url %}
+        <img src="{{ gif_url }}" style="max-width:100%; border-radius:12px;" />
+      {% else %}
+        <p style="color:#3FCF8E;">⏳ Waiting for generation...</p>
+      {% endif %}
+    </div>
+  </div>
+</body>
+</html>
